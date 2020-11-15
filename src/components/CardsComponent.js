@@ -45,6 +45,8 @@ const useStyles = makeStyles({
     marginBottom: -1,
     marginRight: 10,
   },
+  temp:{
+    marginLeft:15},
 });
 
 function CardsComponent({ weather }) {
@@ -78,7 +80,7 @@ function CardsComponent({ weather }) {
               </Typography>
             </div>
           </div>
-          <div>
+          <div classes={classes.temp}>
             <Typography variant="h4" component="h3">
               {Math.round(weather.main.feels_like)}&deg;C
             </Typography>
